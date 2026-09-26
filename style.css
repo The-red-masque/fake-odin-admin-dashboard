@@ -103,34 +103,57 @@ body {
   grid-column: 2 / 3;
   grid-row: 1 / 2;
 
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: repeat(2, 1fr);
 }
-/* searchbar should stretch */
+/* searchbar should stretch and be rounded. */
 .header .searchbar {
   grid-row: 1/2;
   grid-column: 1/2;
 }
-/* Morgan account ico and name should all be on one line. */
-.header .morgans-account {
-  /* display: grid; */
-  /* height: 3rem; */
-  /* grid-template-columns: 1fr 1fr 2fr; */
-  /* grid-template-rows: 1fr; */
-  justify-content: center;
+/* Morgan account icon and name should all be on one line. */
+.header .morgan-account {
+  display: grid;
+  height: 3rem;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  grid-template-columns: 1fr 1fr 2fr;
+  justify-content: end;
   align-items: center;
 }
+.header .welcome {
+  display: grid;
+  grid-row: 2/3;
+  grid-column: 1/2;
+  grid-template-columns: 1fr 1fr; /* profile pic and username */
+  grid-template-rows: subgrid;
+  align-content: center;
+  justify-content: start;
+}
+.header .welcome image {
+  grid-column: 1/2;
+}
+.header .welcome p {
+  grid-column: 2/3;
+  font-weight: lighter;
+  justify-content: start;
+}
+.header .welcome .user {
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding: 4%;
+}
 /* buttons should be in row 2 column 2 */
-.headers .btns {
+.header .btns {
   display: grid;
   grid-row: 2/3;
   grid-column: 2/3;
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   justify-content: right;
-  align-items: right;
+  align-items: center;
 }
-.headers .btns button {
+.header .btns button {
   color: white;
   background-color: deepskyblue;
   border: none;
