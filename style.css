@@ -29,11 +29,14 @@ body {
 
 /* Trending start */
 .trending {
+  /* display: grid; */
   grid-column: 2/3;
   grid-row: 2/3;
+  /* grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr); */
 }
-.trending .tega::before {
-  content: "profile picture";
+.trending .tega {
+  src: "account-circle";
   padding-right: 1rem;
 }
 
