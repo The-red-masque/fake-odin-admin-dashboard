@@ -68,7 +68,7 @@ body {
   grid-column: 1/3;
   grid-row: 1/3;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-content: center;
 }
@@ -85,11 +85,13 @@ body {
 }
 
 .projects .card {
-  background-color: #f1f1f1;
+  background-color: #fff;
   color: black;
   text-align: center;
-  width: 200px;
+  width: 300px;
   padding: 1%;
+  border: 2px solid;
+  border-left-color: yellow;
 }
 /* Projects end */
 
@@ -116,8 +118,8 @@ body {
 }
 
 /* Morgan account icon and name should all be on one line. */
-.header .morgan-account {
-  display: grid;
+.header .user-account {
+  display: inline-grid;
   height: 3rem;
   grid-area: 1/2/2/3;
   grid-template-columns: 1fr 1fr 2fr;
@@ -148,7 +150,7 @@ body {
 .header .welcome .user {
   font-size: 1.3rem;
   font-weight: bold;
-  padding: 4%;
+  /* padding: 4%; */
 }
 
 /* buttons should be in row 2 column 2 */
