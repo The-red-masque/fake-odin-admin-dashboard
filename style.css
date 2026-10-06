@@ -18,18 +18,18 @@ body {
   grid-column: 1 / 2;
   grid-row: 1 / 4;
   grid-template-columns: subgrid;
-  grid-template-rows: 1fr 6fr 3fr;
+  grid-template-rows: subgrid;
   background-color: rgb(27, 176, 176);
   color: white;
   align-content: center;
 }
 .sidebar-list1 {
-  display: grid;
+  /* display: grid; */
   grid-row: 2 / 3;
   list-style-type: none;
 }
 .sidebar-list2 {
-  display: grid;
+  /* display: grid; */
   grid-row: 3/4;
   list-style-type: none;
 }
