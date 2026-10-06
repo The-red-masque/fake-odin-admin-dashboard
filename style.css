@@ -5,6 +5,9 @@ body {
 }
 :root {
   --sidebar-background: #1d9bf0;
+  --header-background: #fff;
+  --card-background: #fff;
+  --dashboard-background: #f5f5f5;
 }
 .container {
   display: grid;
@@ -78,9 +81,9 @@ body {
 }
 /* Trending end */
 
-.wrapper {
+.article {
   display: grid;
-  background-color: whitesmoke;
+  background-color: var(--dashboard-background);
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 2fr 1fr;
 }
@@ -112,8 +115,8 @@ body {
   text-align: center;
   width: 300px;
   padding: 1%;
-  border: 2px solid;
-  border-left-color: yellow;
+  border: 3px solid;
+  border-left-color: #daa520;
 }
 /* Projects end */
 
