@@ -3,6 +3,9 @@ body {
   color: black;
   background-color: white;
 }
+:root {
+  --sidebar-background: #1d9bf0;
+}
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr;
@@ -19,17 +22,15 @@ body {
   grid-row: 1 / 4;
   grid-template-columns: subgrid;
   grid-template-rows: subgrid;
-  background-color: rgb(27, 176, 176);
+  background-color: var(--sidebar-background);
   color: white;
   align-content: center;
 }
 .sidebar-list1 {
-  /* display: grid; */
   grid-row: 2 / 3;
   list-style-type: none;
 }
 .sidebar-list2 {
-  /* display: grid; */
   grid-row: 3/4;
   list-style-type: none;
 }
