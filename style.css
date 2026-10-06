@@ -51,7 +51,19 @@ body {
 .sidebar-list2 img {
   grid-column: 1/2;
 }
-
+.sidebar .branding {
+  display: inline-grid;
+  font-size: 24px;
+  grid-template-columns: 1fr 2fr;
+  justify-self: left;
+  align-items: center;
+}
+.sidebar .branding p {
+  grid-column: 2/3;
+}
+.sidebar .branding img {
+  grid-column: 1/2;
+}
 /* Trending start */
 .trending {
   /* display: grid; */
