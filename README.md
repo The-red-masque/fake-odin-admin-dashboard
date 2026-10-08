@@ -4,20 +4,27 @@ This project aims to create a mock Admin Dashboard.
 
 ## Colors from Odin
 
-Sidebar background: `#2591d0`
-Sidebar color: `#fff`
+### Sidebar
 
-Header background: `#fff`
-color: `#000`
-search input: `#e2e8ef`
-button background: `#2591d0`
-button color: `#fff`
+- background-color: `#2591d0`
+- color: `#fff`
 
-article background: `#e2e8ef`
-article color: `#000`
+### Header
 
-card background: `#fff`
-card color: `#666`
-card title color: `#000`
+- background-color: `#fff`
+- color: `#000`
+- search input: `#e2e8ef`
+- button background: `#2591d0`
+- button color: `#fff`
 
-card border color: `#EEB544`
+### Article
+
+- background: `#e2e8ef`
+- color: `#000`
+
+### Cards
+
+- background-color: `#fff`
+- color: `#666`
+- title color: `#000`
+- left-border-color: `#EEB544`
