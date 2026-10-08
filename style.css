@@ -151,8 +151,9 @@ body {
 /* searchbar should stretch and be beveled. */
 .header .searchbar {
   grid-area: 1/1/2/2;
-  justify-self: left;
+  justify-self: stretch;
   align-self: center;
+  /* justify-items: stretch; */
 }
 
 /* Morgan account icon and name should all be on one line. */
@@ -177,12 +178,12 @@ body {
   grid-column: 1/2;
   grid-row: 2/3;
 }
-.header .welcome p {
+.header .welcome .greeting {
+  display: grid;
+  justify-items: left;
   grid-column: 2/3;
-  grid-row: 2/3;
-  justify-self: left;
 }
-.header .welcome .user {
+.header .welcome .greeting .user {
   font-size: 1.3rem;
   font-weight: bold;
 }
