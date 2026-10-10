@@ -35,7 +35,6 @@ body {
   justify-items: left;
 }
 .sidebar ul {
-  display: grid;
   list-style-type: none;
 }
 
