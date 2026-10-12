@@ -31,7 +31,7 @@ body {
   grid-template-rows: 1fr 2fr 2fr 3fr;
   background-color: var(--blue-background);
   color: var(--white-text);
-  align-content: left;
+  align-items: normal;
   justify-items: left;
 }
 .sidebar ul {
