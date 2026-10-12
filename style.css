@@ -18,7 +18,7 @@ body {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 8fr;
   gap: 4px;
-  text-align: center;
+  text-align: left;
   min-height: 100%;
   padding: 16px;
   box-sizing: border-box;
@@ -41,6 +41,7 @@ body {
 .sidebar li {
   display: grid;
   align-items: center;
+  justify-items:left;
   column-gap: 16px;
 }
 .sidebar li p {
@@ -50,6 +51,7 @@ body {
 
 .sidebar li img {
   grid-column: 1/2;
+  justify-self:left;
 }
 .sidebar .branding {
   display: grid;
@@ -154,6 +156,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+
 .card .title {
   color: var(--black-text);
   font-size: 18px;
