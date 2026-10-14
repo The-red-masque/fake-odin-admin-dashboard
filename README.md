@@ -28,3 +28,7 @@ This project aims to create a mock Admin Dashboard.
 - color: `#666`
 - title color: `#000`
 - left-border-color: `#EEB544`
+
+### SVGs
+
+Use `fill: currentColor` in the stylesheet to adopt the parent color on the svg files.

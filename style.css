@@ -49,27 +49,32 @@ body {
   grid-column: 2/3;
 }
 
-.sidebar li img {
+.sidebar li svg {
   grid-column: 1/2;
-  /* justify-self:left; */
+  fill: currentColor;
+  width:18px;height:18px;
 }
 .sidebar .branding {
   display: grid;
   font-size: 24px;
   grid-template-columns: 1fr 2fr;
-  justify-self: center;
+  justify-self: start;
   align-items: center;
+  column-gap:16px;
 }
 .sidebar .branding p {
   grid-column: 2/3;
 }
-.sidebar .branding img {
+.sidebar .branding svg {
   grid-column: 1/2;
+  fill: currentColor;
+  width:24px;
+  height:24px;
 }
 /* Trending start */
 .trending {
   display: grid;
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 3/4;
   grid-template-columns: subgrid;
   grid-template-rows: 1fr 4fr 1fr;
@@ -149,14 +154,19 @@ body {
 /* Projects start */
 .projects {
   display: grid;
-  grid-column: 1/3;
+  grid-column: 1/2;
   grid-row: 1/3;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: subgrid;
+  grid-template-rows: subgrid;
   align-items: center;
   justify-content: center;
 }
-
+.project-wrapper{
+  display:grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  gap:50px;
+}
 .card .title {
   color: var(--black-text);
   font-size: 18px;
@@ -180,7 +190,7 @@ body {
 }
 /* Announcements start */
 .announcements {
-  grid-column: 2/3;
+  grid-column: 3/4;
   grid-row: 1/2;
 }
 /* Announcements end */
