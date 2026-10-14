@@ -149,7 +149,7 @@ body {
   display: grid;
   background-color: var(--offwhite-background);
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 /* Projects start */
 .projects {
@@ -167,7 +167,6 @@ body {
   color: var(--black-text);
   font-size: 18px;
   font-weight: bold;
-  text-align: center;
 }
 
 .card {
