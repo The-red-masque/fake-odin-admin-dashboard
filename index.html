@@ -67,7 +67,7 @@
           <p>Dashboard</p>
         </div>
         <div class="nav">
-          <ul>
+          <ul class="group-1">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" />
@@ -115,9 +115,9 @@
               <p>Communities</p>
             </li>
           </ul>
-          <!-- I want to replace this <br> with row-gap -->
-          <!-- <br> -->
-          <ul>
+          <!-- Unexpected gap around 1.5X the size of group-1 -->
+          <!-- Expected nav row gap -->
+          <ul class="group-2">
             <li>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path
@@ -143,7 +143,9 @@
               <p>Privacy</p>
             </li>
           </ul>
+          <!-- Unexpected gap around 1.5X the size of group-2 -->
         </div>
+        <div class="empty-row"></div>
       </div>
       <div class="article">
         <h2 class="projects-header">Your Projects</h2>
