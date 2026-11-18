@@ -32,3 +32,9 @@ This project aims to create a mock Admin Dashboard.
 ### SVGs
 
 Use `fill: currentColor` in the stylesheet to adopt the parent color on the svg files or `fill: [color]`.
+
+### Grid shorthand
+
+```css
+grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end;
+```
